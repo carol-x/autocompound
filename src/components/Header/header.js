@@ -3,7 +3,7 @@ import { MainHeader, HeaderText } from './MainHeader.styles'
 const Header = () => {
     return(
        <MainHeader>
-          <HeaderText>Welcome to Algorand Wallet Connect </HeaderText>
+          <HeaderText>RollingFi: rollup your earnings</HeaderText>
         </MainHeader>
     )
 }

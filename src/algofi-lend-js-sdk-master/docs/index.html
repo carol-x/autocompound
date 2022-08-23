@@ -1,0 +1,101 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@algofi/lend</title><meta name="description" content="Documentation for @algofi/lend"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@algofi/lend</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>@algofi/lend</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#algofi-lend-js-sdk" id="algofi-lend-js-sdk" style="color: inherit; text-decoration: none;">
+  <h1>algofi-lend-js-sdk</h1>
+</a>
+<p>Official Javscript SDK for the Algofi Lending Protocol</p>
+
+<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+  <h2>Documentation</h2>
+</a>
+<p><a href="https://algofiorg.github.io/algofi-lend-js-sdk/">https://algofiorg.github.io/algofi-lend-js-sdk/</a></p>
+
+<a href="#design-goal" id="design-goal" style="color: inherit; text-decoration: none;">
+  <h2>Design Goal</h2>
+</a>
+<p>This SDK is useful for developers who want to programatically interact with the Algofi lending protocol.</p>
+
+<a href="#status" id="status" style="color: inherit; text-decoration: none;">
+  <h2>Status</h2>
+</a>
+<p>This SDK is currently under active early development and should not be considered stable.</p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+
+<a href="#nodejs" id="nodejs" style="color: inherit; text-decoration: none;">
+  <h3><a href="https://nodejs.org/en/download/">Node.js</a></h3>
+</a>
+<pre><code><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-0">clone</span><span class="hl-1"> </span><span class="hl-0">git</span><span class="hl-1">@</span><span class="hl-0">github</span><span class="hl-1">.</span><span class="hl-0">com</span><span class="hl-1">:</span><span class="hl-0">Algofiorg</span><span class="hl-1">/</span><span class="hl-0">algofi</span><span class="hl-1">-</span><span class="hl-0">lend</span><span class="hl-1">-</span><span class="hl-0">js</span><span class="hl-1">-</span><span class="hl-0">sdk</span><span class="hl-1">.</span><span class="hl-0">git</span><span class="hl-1"> &amp;&amp; </span><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-0">algofi</span><span class="hl-1">-</span><span class="hl-0">lend</span><span class="hl-1">-</span><span class="hl-0">js</span><span class="hl-1">-</span><span class="hl-0">sdk</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span><br/><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-0">test</span><span class="hl-1"> &amp;&amp; </span><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span><span class="hl-1"> &amp;&amp; </span><span class="hl-0">cd</span><span class="hl-1"> ..</span>
+</code></pre>
+
+<a href="#generate-documentation" id="generate-documentation" style="color: inherit; text-decoration: none;">
+  <h2>Generate Documentation</h2>
+</a>
+<p>To generate docs, cd into the root folder and run</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">typedoc</span><span class="hl-1"> </span><span class="hl-0">algofi</span><span class="hl-1">/</span><span class="hl-0">index</span><span class="hl-1">.</span><span class="hl-0">ts</span>
+</code></pre>
+
+<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+  <h2>Examples</h2>
+</a>
+
+<a href="#add-liquidity-mint" id="add-liquidity-mint" style="color: inherit; text-decoration: none;">
+  <h3>Add liquidity (mint)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/mint.ts">mint.ts</a></p>
+<p>This example shows how to add liquidity to the platform</p>
+
+<a href="#burn-asset-burn" id="burn-asset-burn" style="color: inherit; text-decoration: none;">
+  <h3>Burn asset (burn)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/burn.ts">burn.ts</a></p>
+<p>This example shows how to burn bank assets to redeem for underlying liquidity</p>
+
+<a href="#add-collateral-addcollateral" id="add-collateral-addcollateral" style="color: inherit; text-decoration: none;">
+  <h3>Add collateral (addCollateral)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/addCollateral.ts">addCollateral.ts</a></p>
+<p>This example shows how to add minted bank assets to collateral</p>
+
+<a href="#add-liquidity-to-collateral-minttocollateral" id="add-liquidity-to-collateral-minttocollateral" style="color: inherit; text-decoration: none;">
+  <h3>Add liquidity to collateral (mintToCollateral)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/mintToCollateral.ts">mintToCollateral.ts</a></p>
+<p>This example shows how to add liquidity to the platform collateral</p>
+
+<a href="#remove-collateral-removecollateral" id="remove-collateral-removecollateral" style="color: inherit; text-decoration: none;">
+  <h3>Remove collateral (removeCollateral)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/removeCollateral.ts">removeCollateral.ts</a></p>
+<p>This example shows how to remove bank asset collateral from platform</p>
+
+<a href="#remove-collateral-to-underlying-removecollateralunderlying" id="remove-collateral-to-underlying-removecollateralunderlying" style="color: inherit; text-decoration: none;">
+  <h3>Remove collateral to underlying (removeCollateralUnderlying)</h3>
+</a>
+<p>Example coming!</p>
+<p>This example shows how to remove bank asset collateral from platform to underlying asset</p>
+
+<a href="#borrow-borrow" id="borrow-borrow" style="color: inherit; text-decoration: none;">
+  <h3>Borrow (borrow)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/borrow.ts">borrow.ts</a></p>
+<p>This example shows how to borrow an underlying asset against provided collateral</p>
+
+<a href="#repay-borrow-repayborrow" id="repay-borrow-repayborrow" style="color: inherit; text-decoration: none;">
+  <h3>Repay Borrow (repayBorrow)</h3>
+</a>
+<p><a href="https://github.com/Algofiorg/algofi-lend-js-sdk/blob/master/algofi/examples/repayBorrow.ts">repayBorrow.ts</a></p>
+<p>This example shows how to repay borrowed assets</p>
+
+<a href="#staking-stake-amp-unstake" id="staking-stake-amp-unstake" style="color: inherit; text-decoration: none;">
+  <h3>Staking (stake &amp; unstake)</h3>
+</a>
+<p>Example coming!</p>
+<p>This example shows how to stake and unstake in a staking contract</p>
+
+<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+  <h1>License</h1>
+</a>
+<p>algofi-lend-js-sdk is licensed under a MIT license except for the exceptions listed below. See the LICENSE file for details.</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-enum"><a href="enums/Transactions.html" class="tsd-kind-icon">Transactions</a></li><li class="tsd-kind-class"><a href="classes/Asset.html" class="tsd-kind-icon">Asset</a></li><li class="tsd-kind-class"><a href="classes/Client.html" class="tsd-kind-icon">Client</a></li><li class="tsd-kind-class"><a href="classes/Manager.html" class="tsd-kind-icon">Manager</a></li><li class="tsd-kind-class"><a href="classes/Market.html" class="tsd-kind-icon">Market</a></li><li class="tsd-kind-class"><a href="classes/RewardsProgram.html" class="tsd-kind-icon">Rewards<wbr/>Program</a></li><li class="tsd-kind-class"><a href="classes/StakingContract.html" class="tsd-kind-icon">Staking<wbr/>Contract</a></li><li class="tsd-kind-class"><a href="classes/TransactionGroup.html" class="tsd-kind-icon">Transaction<wbr/>Group</a></li><li class="tsd-kind-function"><a href="modules.html#formatState" class="tsd-kind-icon">format<wbr/>State</a></li><li class="tsd-kind-function"><a href="modules.html#get" class="tsd-kind-icon">get</a></li><li class="tsd-kind-function"><a href="modules.html#getGlobalState" class="tsd-kind-icon">get<wbr/>Global<wbr/>State</a></li><li class="tsd-kind-function"><a href="modules.html#getInitRound" class="tsd-kind-icon">get<wbr/>Init<wbr/>Round</a></li><li class="tsd-kind-function"><a href="modules.html#getInitTxns" class="tsd-kind-icon">get<wbr/>Init<wbr/>Txns</a></li><li class="tsd-kind-function"><a href="modules.html#getManagerAppId" class="tsd-kind-icon">get<wbr/>Manager<wbr/>App<wbr/>Id</a></li><li class="tsd-kind-function"><a href="modules.html#getMarketAppId" class="tsd-kind-icon">get<wbr/>Market<wbr/>App<wbr/>Id</a></li><li class="tsd-kind-function"><a href="modules.html#getNewAccount" class="tsd-kind-icon">get<wbr/>New<wbr/>Account</a></li><li class="tsd-kind-function"><a href="modules.html#getOrderedSymbols" class="tsd-kind-icon">get<wbr/>Ordered<wbr/>Symbols</a></li><li class="tsd-kind-function"><a href="modules.html#getRandomInt" class="tsd-kind-icon">get<wbr/>Random<wbr/>Int</a></li><li class="tsd-kind-function"><a href="modules.html#getStakingContracts" class="tsd-kind-icon">get<wbr/>Staking<wbr/>Contracts</a></li><li class="tsd-kind-function"><a href="modules.html#intToBytes" class="tsd-kind-icon">int<wbr/>To<wbr/>Bytes</a></li><li class="tsd-kind-function"><a href="modules.html#newAlgofiMainnetClient" class="tsd-kind-icon">new<wbr/>Algofi<wbr/>Mainnet<wbr/>Client</a></li><li class="tsd-kind-function"><a href="modules.html#newAlgofiTestnetClient" class="tsd-kind-icon">new<wbr/>Algofi<wbr/>Testnet<wbr/>Client</a></li><li class="tsd-kind-function"><a href="modules.html#prepareAddCollateralTransactions" class="tsd-kind-icon">prepare<wbr/>Add<wbr/>Collateral<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareAssetOptinTransactions" class="tsd-kind-icon">prepare<wbr/>Asset<wbr/>Optin<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareBorrowTransactions" class="tsd-kind-icon">prepare<wbr/>Borrow<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareBurnTransactions" class="tsd-kind-icon">prepare<wbr/>Burn<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareClaimRewardsTransactions" class="tsd-kind-icon">prepare<wbr/>Claim<wbr/>Rewards<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareClaimStakingRewardsTransactions" class="tsd-kind-icon">prepare<wbr/>Claim<wbr/>Staking<wbr/>Rewards<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareLiquidateTransactions" class="tsd-kind-icon">prepare<wbr/>Liquidate<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareManagerAppOptinTransactions" class="tsd-kind-icon">prepare<wbr/>Manager<wbr/>App<wbr/>Optin<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareMarketAppOptinTransactions" class="tsd-kind-icon">prepare<wbr/>Market<wbr/>App<wbr/>Optin<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareMintToCollateralTransactions" class="tsd-kind-icon">prepare<wbr/>Mint<wbr/>To<wbr/>Collateral<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareMintTransactions" class="tsd-kind-icon">prepare<wbr/>Mint<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#preparePaymentTransaction" class="tsd-kind-icon">prepare<wbr/>Payment<wbr/>Transaction</a></li><li class="tsd-kind-function"><a href="modules.html#prepareRemoveCollateralTransactions" class="tsd-kind-icon">prepare<wbr/>Remove<wbr/>Collateral<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareRemoveCollateralUnderlyingTransactions" class="tsd-kind-icon">prepare<wbr/>Remove<wbr/>Collateral<wbr/>Underlying<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareRepayBorrowTransactions" class="tsd-kind-icon">prepare<wbr/>Repay<wbr/>Borrow<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareStakeTransactions" class="tsd-kind-icon">prepare<wbr/>Stake<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareStakingContractOptinTransactions" class="tsd-kind-icon">prepare<wbr/>Staking<wbr/>Contract<wbr/>Optin<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#prepareUnstakeTransactions" class="tsd-kind-icon">prepare<wbr/>Unstake<wbr/>Transactions</a></li><li class="tsd-kind-function"><a href="modules.html#readGlobalState" class="tsd-kind-icon">read<wbr/>Global<wbr/>State</a></li><li class="tsd-kind-function"><a href="modules.html#readLocalState" class="tsd-kind-icon">read<wbr/>Local<wbr/>State</a></li><li class="tsd-kind-function"><a href="modules.html#searchGlobalState" class="tsd-kind-icon">search<wbr/>Global<wbr/>State</a></li><li class="tsd-kind-function"><a href="modules.html#waitForConfirmation" class="tsd-kind-icon">wait<wbr/>For<wbr/>Confirmation</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>

@@ -1,0 +1,49 @@
+{
+  "name": "@algofi/lend",
+  "version": "0.0.9",
+  "description": "The official JavaScript SDK for the Algofi Lending Protocol",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "module": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Algofiorg/algofi-js-sdk.git"
+  },
+  "keywords": [
+    "algofi",
+    "algorand"
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "mocha",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "algosdk": "github:algorand/js-algorand-sdk",
+    "mocha": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "tsdx": "^0.14.1",
+    "typedoc": "^0.22.11"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": false
+  },
+  "author": "Blockchain Technologies, Inc.",
+  "license": "MIT"
+}

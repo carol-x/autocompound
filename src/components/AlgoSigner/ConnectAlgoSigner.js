@@ -20,7 +20,7 @@ const ConnectAlgoSigner = ({userAccount}) => {
   
       }
       return(
-        userAccount.current == null ?
+        (userAccount.current == null && userAccount.current[0].address == null) ?
         <div>
           <Button backgroundColor='blue' onClick={connectAlgoSigner}>
           Connect AlgoSigner
@@ -30,6 +30,7 @@ const ConnectAlgoSigner = ({userAccount}) => {
         <Button backgroundColor='white' onClick={()=>{}}>
         Connected
         </Button>
+        <p>User account: {userAccount.current[0].address}</p>
       </div> 
         
       )
